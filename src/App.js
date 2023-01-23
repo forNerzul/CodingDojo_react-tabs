@@ -1,24 +1,17 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Tabs from './components/Tabs';
+
 
 function App() {
+  const tabs = [
+    {title: "Tab 1", content: "Tab 1 content is showing here"}, 
+    {title: "Tab 2", content: "Tab 2 content is showing here"}, 
+    {title: "Tab 3", content: "Tab 3 content is showing here"}
+  ];
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Tabs tabs={tabs}/>
   );
 }
 
